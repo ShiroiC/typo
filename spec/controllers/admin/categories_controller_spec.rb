@@ -16,6 +16,11 @@ describe Admin::CategoriesController do
     assert_response :redirect, :action => 'index'
   end
 
+  it "render_with_null_id" do
+    get :edit, :id=>nil
+    responce.should be_success
+  end
+
   describe "test_edit" do
     before(:each) do
       get :edit, :id => Factory(:category).id
