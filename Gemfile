@@ -20,7 +20,7 @@ dbfile = File.expand_path("../config/database.yml", __FILE__)
 #end
 
 group :production do
-  gem 'pg', '~>9.4.1'
+  gem 'pg', '~>0.9.4'
 end
 
 source 'https://rubygems.org'
