@@ -1,5 +1,4 @@
 config/mail.yml
-*.log
 *~
 db/*.sqlite*
 db/schema.rb
